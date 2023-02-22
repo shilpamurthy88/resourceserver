@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/shilpa
+    username: root
+    password: MySql@12345
+    properties:
+      hibernate:
+        format_sql: true
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+      jwt:
+        key-value: -----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4fyWNKtW7VXv+MEzKh1G/fNepuRcnm+3z0WFu8pclKtFcPc4xu11zUki4XmspdNnDhGLA4+jX4GLV0F5QuoH8gl7J/vaBnd4rjWyxYKLXcn1gsTZmp/+34e7/dsZKZMsXP2tnzqCJ3Jdk6qhjUxc6zgGIkJrd/9oVlJb7flb/LG6ZEwLJtaBllNHnuAwS7fsVTvdeh6evIb0ZATp934f/siauZ9QObH7eMcBusfk/e7r1BS2XlJz+/lt5woMaczusEFCPmGL9Rc5IKhkr5RTBCbSEqb0HyWgoMDCPWFSeVVlqUyPfQopvGGZNbqx1qLc64np/mR05zPSKDCKozUAowIDAQAB-----END PUBLIC KEY-----
+
+server:
+  port: 8082
+
